@@ -1,0 +1,17 @@
+{
+  "name": "bolt-circle-calc",
+  "version": "1.0.0",
+  "description": "Bolt circle hole coordinates for drilling and CNC setup",
+  "license": "MIT",
+  "author": "shanguoao2026-web",
+  "type": "module",
+  "bin": { "bolt-circle-calc": "dist/cli.js" },
+  "files": ["dist", "README.md", "LICENSE"],
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node test/cli.test.js",
+    "prepack": "npm run build"
+  },
+  "devDependencies": { "@types/node": "^18.19.0", "typescript": "^5.7.0" }
+}
